@@ -49,7 +49,7 @@ input, /* 1 */
 select, /* 1 */
 textarea  /* 1 */
 {
-  font-family: 'helvetica neue',arial,'hiragino sans gb',stheiti,'wenquanyi micro hei',\5FAE\8F6F\96C5\9ED1,\5B8B\4F53,sans-serif;
+  font-family: PingFangSC-Medium, PingFang SC;
 }
 
 /**
