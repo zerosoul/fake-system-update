@@ -10,6 +10,11 @@ const Thumbnails = [
     bg: 'https://gitee.com/zyanggc/oss/raw/master/works/fake.update.win.xp.bg.jpg'
   },
   {
+    to: '/update/win_7',
+    title: 'Windows 7',
+    bg: 'https://gitee.com/zyanggc/oss/raw/master/works/2BalLP.jpg'
+  },
+  {
     to: '/update/win_vista',
     title: 'Windows Vista',
     bg: 'https://gitee.com/zyanggc/oss/raw/master/works/fake.update.win.vista.bg.jpg'

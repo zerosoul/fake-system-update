@@ -24,9 +24,10 @@ const StyledWrapper = styled.section`
       /* margin-bottom: 4rem; */
     }
     .tip {
+      line-height: 1.5;
       position: absolute;
       bottom: 1rem;
-      font-size: 1rem;
+      font-size: 0.8rem;
       color: #bbb;
       text-align: right;
       a {
@@ -61,7 +62,9 @@ const StyledWrapper = styled.section`
         justify-content: center;
         background-size: cover;
         background-repeat: no-repeat;
+        transition: all 0.6s;
         &:hover {
+          transform: scale(1.1);
           border-color: #fff;
         }
       }

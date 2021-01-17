@@ -1,9 +1,10 @@
 import { useRef } from 'react';
 import styled from 'styled-components';
 import copy from 'copy-to-clipboard';
-import { useParams } from 'react-router-dom';
+import { useParams, useHistory } from 'react-router-dom';
 import UpdateWinVista from '../../components/UpdateWinVista';
 import UpdateWinXP from '../../components/UpdateWinXP';
+import UpdateWin7 from '../../components/UpdateWin7';
 import UpdateWin8 from '../../components/UpdateWin8';
 import UpdateWin10 from '../../components/UpdateWin10';
 import UpdateAppleMac from '../../components/UpdateAppleMac';
@@ -14,7 +15,6 @@ const StyledWrapper = styled.div`
   position: relative;
   .setting {
     position: absolute;
-
     cursor: pointer;
     width: 1.5rem;
     height: 1.5rem;
@@ -80,11 +80,13 @@ const StyledWrapper = styled.div`
 const UpdateMap = {
   win_vista: <UpdateWinVista />,
   win_xp: <UpdateWinXP />,
+  win_7: <UpdateWin7 />,
   win8: <UpdateWin8 />,
   win10: <UpdateWin10 />,
   apple_mac: <UpdateAppleMac />
 };
 export default function UpdatePage() {
+  let history = useHistory();
   const fsEle = useRef(null);
   const { sys } = useParams();
   console.log({ sys });
@@ -92,7 +94,7 @@ export default function UpdatePage() {
     fsEle.current.requestFullscreen();
   };
   const handleBackClick = () => {
-    history.go(-1);
+    history.push('/');
   };
   const handleCopyClick = () => {
     copy(location.href, {
@@ -106,20 +108,20 @@ export default function UpdatePage() {
     <StyledWrapper ref={fsEle}>
       {UpdateMap[sys]}
 
-      <aside onClick={handleBackClick} className="setting back" data-alt="back home page">
+      <aside onClick={handleBackClick} className="setting back" data-alt="Back home page">
         <img src={IconBack} />
       </aside>
       <aside
         onClick={handleFSClick}
         className="setting fullscreen"
-        data-alt="fullscreen the page and slack off at work!🤣"
+        data-alt="Fullscreen the page and slack off at work!🤣"
       >
         <img src={IconFS} />
       </aside>
       <aside
         onClick={handleCopyClick}
         className="setting share"
-        data-alt="copy the link and share!"
+        data-alt="Copy the link and share!"
       >
         <img src={IconCopy} />
       </aside>
