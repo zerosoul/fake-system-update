@@ -7,17 +7,17 @@ const Thumbnails = [
   {
     to: '/update/win_xp',
     title: 'Windows XP',
-    bg: '/img/fake.update.win.xp.bg.jpg'
+    bg: 'img/fake.update.win.xp.bg.jpg'
   },
   {
     to: '/update/win_7',
     title: 'Windows 7',
-    bg: '/img/fake.update.win.7.bg.jpg'
+    bg: 'img/fake.update.win.7.bg.jpg'
   },
   {
     to: '/update/win_vista',
     title: 'Windows Vista',
-    bg: '/img/fake.update.win.vista.bg.jpg'
+    bg: 'img/fake.update.win.vista.bg.jpg'
   },
   {
     to: '/update/win8',

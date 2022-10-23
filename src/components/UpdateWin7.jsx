@@ -5,7 +5,7 @@ const StyledWrapper = styled.section`
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-image: url('/img/fake.update.win.7.bg.jpg');
+  background-image: url('img/fake.update.win.7.bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -49,7 +49,7 @@ export default function UpdateWin7() {
   return (
     <StyledWrapper>
       <div className="tip">
-        <img className="loading" src="/img/fake.update.win7.loading.gif"></img>
+        <img className="loading" src="img/fake.update.win7.loading.gif"></img>
         <div className="txt">
           <span className="line">
             Installing Updates{' '}
@@ -61,7 +61,7 @@ export default function UpdateWin7() {
           <span className="line">Do not turn off your computer</span>
         </div>
       </div>
-      {/* <img className="logo" src="/img/QL4P7n.jpg"></img> */}
+      {/* <img className="logo" src="img/QL4P7n.jpg"></img> */}
     </StyledWrapper>
   );
 }
