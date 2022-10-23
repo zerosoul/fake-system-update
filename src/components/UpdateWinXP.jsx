@@ -5,7 +5,7 @@ const StyledWrapper = styled.section`
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-image: url('https://gitee.com/zyanggc/oss/raw/master/works/fake.update.win.xp.bg.jpg');
+  background-image: url('/img/fake.update.win.xp.bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -40,10 +40,7 @@ export default function UpdateWinXP() {
   return (
     <StyledWrapper>
       <div className="tip">
-        <img
-          className="logo"
-          src="https://gitee.com/zyanggc/oss/raw/master/works/fake.update.win.xp.logo.png"
-        ></img>
+        <img className="logo" src="/img/fake.update.win.xp.logo.png"></img>
         <div className="txt">
           <span className="line">
             Installing Windows Updates... <FakePercent />

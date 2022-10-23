@@ -1,23 +1,23 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React from 'react';
 import { Link } from 'react-router-dom';
-import GithubRibbon from '../../components/GithubRibbon';
+// import GithubRibbon from '../../components/GithubRibbon';
 import StyledWrapper from './styled';
 const Thumbnails = [
   {
     to: '/update/win_xp',
     title: 'Windows XP',
-    bg: 'https://gitee.com/zyanggc/oss/raw/master/works/fake.update.win.xp.bg.jpg'
+    bg: '/img/fake.update.win.xp.bg.jpg'
   },
   {
     to: '/update/win_7',
     title: 'Windows 7',
-    bg: 'https://gitee.com/zyanggc/oss/raw/master/works/2BalLP.jpg'
+    bg: '/img/fake.update.win.7.bg.jpg'
   },
   {
     to: '/update/win_vista',
     title: 'Windows Vista',
-    bg: 'https://gitee.com/zyanggc/oss/raw/master/works/fake.update.win.vista.bg.jpg'
+    bg: '/img/fake.update.win.vista.bg.jpg'
   },
   {
     to: '/update/win8',
@@ -38,7 +38,7 @@ const Thumbnails = [
 export default function Home() {
   return (
     <>
-      <GithubRibbon />
+      {/* <GithubRibbon /> */}
       <StyledWrapper>
         <div className="half left">
           <h1 className="title">Fake System Update Screens</h1>

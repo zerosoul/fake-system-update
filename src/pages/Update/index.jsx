@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import styled from 'styled-components';
 import copy from 'copy-to-clipboard';
-import { useParams, useHistory } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import UpdateWinVista from '../../components/UpdateWinVista';
 import UpdateWinXP from '../../components/UpdateWinXP';
 import UpdateWin7 from '../../components/UpdateWin7';
@@ -86,7 +86,7 @@ const UpdateMap = {
   apple_mac: <UpdateAppleMac />
 };
 export default function UpdatePage() {
-  let history = useHistory();
+  let navigateTo = useNavigate();
   const fsEle = useRef(null);
   const { sys } = useParams();
   console.log({ sys });
@@ -94,7 +94,7 @@ export default function UpdatePage() {
     fsEle.current.requestFullscreen();
   };
   const handleBackClick = () => {
-    history.push('/');
+    navigateTo('/');
   };
   const handleCopyClick = () => {
     copy(location.href, {

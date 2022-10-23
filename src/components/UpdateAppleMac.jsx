@@ -31,14 +31,8 @@ export default function UpdateAppleMac() {
   return (
     <StyledWrapper>
       <div className="tip">
-        <img
-          className="logo"
-          src="https://gitee.com/zyanggc/oss/raw/master/works/fake.update.mac.logo.png"
-        ></img>
-        <img
-          className="progress"
-          src="https://gitee.com/zyanggc/oss/raw/master/works/fake.update.mac.progress.gif"
-        />
+        <img className="logo" src="/img/fake.update.mac.logo.png"></img>
+        <img className="progress" src="/img/fake.update.mac.progress.gif" />
       </div>
     </StyledWrapper>
   );
